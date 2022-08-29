@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build --tag ghcr.io/ridomin/dotnet-app:$(date +%s) -f dotnet-app/Dockerfile .
+      run: docker build --tag ghcr.io/ridomin/dotnet-app:$(date +%s) -f dotnet-app/Dockerfile dotnet-app
