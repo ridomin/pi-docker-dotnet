@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build --tag ghcr.io/ridomin/dotnet-app:$(date +%s) -f dotnet-app/Dockerfile dotnet-app
+      run: docker build --tag ghcr.io/ridomin/dotnet-app:dev -f dotnet-app/Dockerfile dotnet-app
     - name: Login to GitHub Container Registry
       uses: docker/login-action@v1
       with:
@@ -23,4 +23,4 @@ jobs:
         username: ${{ github.repository_owner }}
         password: ${{ secrets.REGISTRY_TOKEN }}
     - name: push docker
-      run: docker push ghcr.io/ridomin/dotnet-app:$(date +%s)
+      run: docker push ghcr.io/ridomin/dotnet-app:dev
