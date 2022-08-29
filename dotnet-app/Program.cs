@@ -1,3 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("Hello, World!");
 Console.WriteLine(System.Environment.MachineName);
+Console.WriteLine(System.Environment.OSVersion);
+Console.WriteLine(System.Runtime.InteropServices.RuntimeInformation.ProcessArchitecture);
