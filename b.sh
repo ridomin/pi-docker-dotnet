@@ -1,0 +1,1 @@
+docker build --tag dotnet-app:arm -f dotnet-app/Dockerfile.pi dotnet-app
